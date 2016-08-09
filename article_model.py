@@ -34,6 +34,9 @@ class BBCArticleItem(scrapy.Item):
 
 	@classmethod
 	def parse_result(cls, results):
+		'''
+		parse database queryset data to object list
+		'''
 		for result in results:
 			article = BBCArticleItem()
                         article['_id'] = result['_id']
