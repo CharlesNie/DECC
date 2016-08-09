@@ -35,4 +35,12 @@ class BBCArticleItem(scrapy.Item):
 	@classmethod
 	def parse_result(cls, results):
 		for result in results:
-			yield result
+			article = BBCArticleItem()
+                        article['_id'] = result['_id']
+                        article['title'] = result['title']
+                        article['date'] = result['date']
+                        article['time'] = result['time']
+                        article['section'] = result['section']
+                        article['content'] = result['content']
+                        article['url'] = result['url']
+                        yield article
