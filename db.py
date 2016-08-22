@@ -4,7 +4,7 @@ import ssl
 
 class MongoDB:
 
-	db_uri = 'mongodb://DECC:fortestonly@aws-us-east-1-portal.17.dblayer.com:11853/DECCdb'
+	db_uri = 'MongoDB database has been shutdown'
 	
 	def __init__(self, uri=None):
 		if uri is not None:
